@@ -18,46 +18,7 @@ export const HomePage: React.FC = () => {
         <Typography variant="h3">OUR GAMES</Typography>
         <Box className="flex row gap-4">
           {/* Game One */}
-          <GameCard title="TEst" image="sampleGameImage.png" />
-          {/* Game Two */}
-          <Box className="flex column justify-content-center">
-            {/* Image */}
-            <Box
-              sx={{
-                height: "10rem",
-                backgroundColor: "darkgrey",
-                borderRadius: "0.5rem",
-              }}
-            ></Box>
-            {/* Title */}
-            <Typography variant="h4">Title One</Typography>
-          </Box>
-          {/* Game Three */}
-          <Box className="flex column justify-content-center">
-            {/* Image */}
-            <Box
-              sx={{
-                height: "10rem",
-                backgroundColor: "darkgrey",
-                borderRadius: "0.5rem",
-              }}
-            ></Box>
-            {/* Title */}
-            <Typography variant="h4">Title One</Typography>
-          </Box>
-          {/* Game Four */}
-          <Box className="flex column justify-content-center">
-            {/* Image */}
-            <Box
-              sx={{
-                height: "10rem",
-                backgroundColor: "darkgrey",
-                borderRadius: "0.5rem",
-              }}
-            ></Box>
-            {/* Title */}
-            <Typography variant="h4">Title One</Typography>
-          </Box>
+          <GameCard title="Pyresong" image="sampleGameImage.png" />
         </Box>
       </Box>
       {/* Contact */}

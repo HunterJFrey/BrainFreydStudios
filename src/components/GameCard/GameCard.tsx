@@ -11,7 +11,6 @@ export const GameCard: React.FC<GameCardProps> = ({ title, image }) => {
       {/* Image */}
       <Box
         sx={{
-          aspectRatio: "16/9",
           overflow: "hidden",
           height: "10rem",
           backgroundColor: "darkgrey",

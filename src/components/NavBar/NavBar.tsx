@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import type React from "react";
 import { useNavigate } from "react-router-dom";
 import "./NavBar.scss";
@@ -19,14 +19,20 @@ export const NavBar: React.FC = () => {
     >
       <Toolbar style={{ justifyContent: "space-between" }}>
         {/* Icon */}
-        <Typography
-          variant="h6"
-          className="navbar-link"
-          component="div"
+        <Box
+          component="img"
+          src={`src/assets/fullLogo.png`}
+          loading="lazy"
+          alt={`BrainFreydStudios Logo`}
           onClick={() => handleLinkClick("/")}
-        >
-          Icon
-        </Typography>
+          sx={{
+            width: "10rem",
+            height: "3rem",
+            objectFit: "cover",
+            display: "block",
+            cursor: "pointer",
+          }}
+        />
         {/* Nav Links */}
         <Box style={{ display: "flex", gap: "1.5rem" }}>
           <Button onClick={() => handleLinkClick("/games")}>Games</Button>
