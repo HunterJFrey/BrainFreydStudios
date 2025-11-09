@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 interface GameCardProps {
   title: string;
@@ -32,6 +32,9 @@ export const GameCard: React.FC<GameCardProps> = ({ title, image }) => {
       </Box>
       {/* Title */}
       <Typography variant="h4">{title}</Typography>
+      {/* Tagline/Genre */}
+      {/* View Details */}
+      <Button>VIEW DETAILS</Button>
     </Box>
   );
 };
