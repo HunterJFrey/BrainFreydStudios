@@ -9,8 +9,7 @@ export const HomePage: React.FC = () => {
       <Box className="flex column w-100 align-items-center gap-1">
         <Typography variant="h3">CRAFTING ENCHANTING WORLDS</Typography>
         <Typography variant="subtitle1">
-          BrainFreydStudios is an indie studio focused on creating captivating
-          and imaginative worlds.
+          Indie games served hot from the frying pan of imagination!
         </Typography>
       </Box>
       {/* Our Games */}
@@ -21,10 +20,27 @@ export const HomePage: React.FC = () => {
           <GameCard title="Pyresong" image="sampleGameImage.png" />
         </Box>
       </Box>
+      {/* About Us */}
+      <Box className="flex column w-100 align-items-center gap-1">
+        <Typography variant="h3">ABOUT US</Typography>
+        <Typography variant="subtitle1">
+          BrainFreydStudios is a small team of developers, storywriters, and
+          gamers based in the US. We craft and conjure games that we would want
+          to play, and hope you will too!
+        </Typography>
+      </Box>
       {/* Contact */}
       <Box className="flex column w-100 align-items-center gap-1">
         <Typography variant="h3">CONTACT</Typography>
-        <Typography variant="subtitle1">brainfreydstudios@gmail.com</Typography>
+        <Typography variant="subtitle1">
+          Got a wild idea, collaboration request, or just want to say hello?
+        </Typography>
+        <Typography variant="subtitle1">
+          Send a raven:{" "}
+          <a href="mailto:brainfreydstudios@gmail.com">
+            brainfreydstudios@gmail.com
+          </a>
+        </Typography>
       </Box>
     </Box>
   );
