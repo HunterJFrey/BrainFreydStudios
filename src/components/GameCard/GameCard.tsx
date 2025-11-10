@@ -1,11 +1,12 @@
 import { Box, Button, Typography } from "@mui/material";
+import sampleGameImage from "../../assets/sampleGameImage.png";
 
 interface GameCardProps {
   title: string;
-  image: string;
+  image?: string;
 }
 
-export const GameCard: React.FC<GameCardProps> = ({ title, image }) => {
+export const GameCard: React.FC<GameCardProps> = ({ title }) => {
   return (
     <Box className="flex column justify-content-center">
       {/* Image */}
@@ -19,7 +20,7 @@ export const GameCard: React.FC<GameCardProps> = ({ title, image }) => {
       >
         <Box
           component="img"
-          src={`src/assets/${image}`}
+          src={sampleGameImage}
           loading="lazy"
           alt={`${title} Game Cover`}
           sx={{

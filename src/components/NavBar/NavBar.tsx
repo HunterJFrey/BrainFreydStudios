@@ -3,6 +3,7 @@ import type React from "react";
 import { useNavigate } from "react-router-dom";
 import "./NavBar.scss";
 import { ThemeToggle } from "../../theme/ThemeToggle";
+import fullLogo from "../../assets/fullLogo.png";
 
 export const NavBar: React.FC = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ export const NavBar: React.FC = () => {
         {/* Icon */}
         <Box
           component="img"
-          src={`src/assets/fullLogo.png`}
+          src={fullLogo}
           loading="lazy"
           alt={`BrainFreydStudios Logo`}
           onClick={() => handleLinkClick("/")}
