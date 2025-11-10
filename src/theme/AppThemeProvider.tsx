@@ -1,12 +1,22 @@
+/* eslint-disable react-refresh/only-export-components */
+import {
+  createContext,
+  useMemo,
+  useState,
+  type Dispatch,
+  type SetStateAction,
+} from "react";
+import React from "react";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import { createContext, useMemo, useState, type SetStateAction } from "react";
 import { makeTheme } from "./Theme";
-import React from "react";
 
-export const ThemeContext = createContext({
+export const ThemeContext = createContext<{
+  mode: "dark" | "light";
+  setMode: Dispatch<SetStateAction<"dark" | "light">>;
+}>({
   mode: "dark",
-  setMode: React.Dispatch<SetStateAction<"dark" | "light">>,
+  setMode: () => {}, // default no-op
 });
 
 export function AppThemeProvider({ children }: { children: React.ReactNode }) {

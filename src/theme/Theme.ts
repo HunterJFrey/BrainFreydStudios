@@ -3,6 +3,7 @@ import {
   createTheme,
   responsiveFontSizes,
   type PaletteOptions,
+  type SimplePaletteColorOptions,
 } from "@mui/material/styles";
 
 // Shared brand tokens (non-color)
@@ -115,10 +116,9 @@ export const makeTheme = (mode: "dark" | "light") => {
       body2: { lineHeight: 1.7, color: palette.text?.secondary as string },
     },
 
-    // Expose custom tokens
     custom: {
       glow: isDark ? "#9FD7FF" : "#6BA3FF",
-      ring: palette.info!.main as string,
+      ring: (palette.info as SimplePaletteColorOptions)?.main ?? "#8AB4F8",
       surface2: isDark ? "#1A1F2B" : "#F2EFE8",
       radius: { sm: 10, md: 16, lg: 24 },
       shadows: {
@@ -130,7 +130,7 @@ export const makeTheme = (mode: "dark" | "light") => {
     components: {
       MuiCssBaseline: {
         styleOverrides: {
-          // Starfield + glows background
+          // Starfield + glow
           body: {
             backgroundAttachment: "fixed",
             backgroundImage: `
@@ -156,7 +156,7 @@ export const makeTheme = (mode: "dark" | "light") => {
           "*:focus-visible": {
             outline: "none",
             boxShadow: `0 0 0 3px color-mix(in oklab, ${
-              palette.info!.main as string
+              (palette.info as SimplePaletteColorOptions)?.main ?? "#8AB4F8"
             } 45%, transparent)`,
             borderRadius: `${shape.borderRadius}px`,
           },
