@@ -186,7 +186,7 @@ export const makeTheme = (mode: "dark" | "light") => {
         defaultProps: { disableElevation: true },
         styleOverrides: {
           root: ({ theme }) => ({
-            borderRadius: 999,
+            borderRadius: "0.5rem",
             textTransform: "none",
             paddingInline: "1rem",
             paddingBlock: ".65rem",

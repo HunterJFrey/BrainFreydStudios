@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import sampleGameImage from "../../assets/sampleGameImage.png";
 
-interface GameCardProps {
+export interface GameCardProps {
   title: string;
   image?: string;
 }
