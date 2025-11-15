@@ -10,7 +10,6 @@ interface FeaturedGameCardProps extends GameCardProps {
 export const FeaturedGameCard: React.FC<FeaturedGameCardProps> = ({
   title,
   description,
-  image,
 }) => {
   return (
     <Card sx={{ padding: "1rem" }}>

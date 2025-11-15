@@ -1,10 +1,7 @@
 import {
   Box,
   Card,
-  Divider,
   Grid,
-  Tab,
-  Tabs,
   ToggleButton,
   ToggleButtonGroup,
 } from "@mui/material";
